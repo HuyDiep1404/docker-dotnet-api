@@ -12,7 +12,7 @@ jobs:
         - setup_remote_docker:
             docker_layer_caching: true
         - run:
-            name: Build and push Docker image
+            name: Build  and push Docker image
             command: |
               docker build -t containeregistrytest.azurecr.io/docker-dotnet-api:latest .
               docker login -u containeregistrytest -p 8u8MO/3GJImih+1RKRdhgtIzPVtavoSU9pN0Ex/f+e+ACRBIcywu containeregistrytest.azurecr.io
