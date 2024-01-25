@@ -14,9 +14,9 @@ jobs:
         - run:
             name: Build and push Docker image
             command: |
-              docker build -t dotnetcoreapi.azurecr.io/dotnet-api:latest .
-              docker login -u $DOCKER_USER -p $DOCKER_PASS dotnetcoreapi.azurecr.io
-              docker push dotnetcoreapi.azurecr.io/dotnet-api:latest
+              docker build -t containeregistrytest.azurecr.io/docker-dotnet-api:latest .
+              docker login -u containeregistrytest -p 8u8MO/3GJImih+1RKRdhgtIzPVtavoSU9pN0Ex/f+e+ACRBIcywu containeregistrytest.azurecr.io
+              docker push containeregistrytest.azurecr.io/docker-dotnet-api:latest
 workflows:
   build-and-deploy:
     jobs:
